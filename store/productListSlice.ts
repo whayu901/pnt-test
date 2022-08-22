@@ -38,7 +38,7 @@ export const fetchProduct = (): AppThunk => async (dispatch: any) => {
   );
   const data = await response.json();
 
-  await timeoutPromise(1000);
+  await timeoutPromise(1500);
 
   dispatch(setProductData(data));
 };
