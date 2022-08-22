@@ -1,0 +1,32 @@
+.bannerstay {
+  margin-top: 100px;
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 10px;
+  }
+}
+
+.bannerstay__wrapitem {
+  border-radius: 60px 60px 0 0;
+}
+.bannerstay__photowrap > span {
+  overflow: inherit !important;
+  position: absolute !important;
+  z-index: 2 !important;
+}
+.bannerstay__photo {
+  bottom: 288px !important;
+  right: -1600px !important;
+}
+.bannerstay__desc {
+  @apply mb-10;
+}
+
+.bannerstay__title {
+  @apply text-3xl font-semibold mb-2;
+}
+
+.bannerstay__btn {
+  padding: 0.5rem 3rem;
+  background: white;
+}

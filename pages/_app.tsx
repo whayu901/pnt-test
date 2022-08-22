@@ -1,8 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppProps } from "next/app";
+import { config } from "@fortawesome/fontawesome-svg-core";
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
-}
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@/styles/global.css";
+import "@/styles/global.scss";
 
-export default MyApp
+import { wrapper } from "../store/store";
+
+config.autoAddCss = false;
+
+export const MyApp = ({ Component, pageProps }: AppProps) => (
+  <Component {...pageProps} />
+);
+
+export default wrapper.withRedux(MyApp);

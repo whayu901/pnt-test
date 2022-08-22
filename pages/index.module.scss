@@ -1,0 +1,20 @@
+.home {
+  .home__title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    padding-left: 0;
+
+    @media only screen and (max-width: 767px) {
+      justify-content: start;
+      margin-top: 10px;
+
+      font-size: 20px;
+      line-height: 28px;
+      padding-left: 0;
+    }
+  }
+
+  .home__container {
+    @apply pt-4 pb-10 px-4;
+  }
+}
